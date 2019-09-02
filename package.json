@@ -1,0 +1,29 @@
+{
+  "name": "electron-note",
+  "version": "1.0.1",
+  "description": "Electron Version YoudaoNote",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.2",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "you.id",
+    "productName": "YoudaoNote",
+    "mac": {
+      "category": "tools"
+    },
+    "fileAssociations": {
+      "ext": "png"
+    },
+    "icon": "./myicon.icns"
+  }
+}
