@@ -16,6 +16,11 @@ function createWindow () {
 
   win.webContents.on('new-window', function(e, url) {
     e.preventDefault();
+    if (url.indexOf('https://note.youdao.com/web') >= 0) {
+      // If url is inside youdao, do not open browser, just loadURL to keep user inside this app
+      win.loadURL(url);
+      return;
+    }
     require('electron').shell.openExternal(url);
   });
 
