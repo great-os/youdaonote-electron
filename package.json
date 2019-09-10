@@ -1,12 +1,14 @@
 {
   "name": "electron-note",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Electron Version YoudaoNote",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "package-win": "electron-builder build --win --x64",
+    "package-all": "electron-builder build -mwl"
   },
   "keywords": [],
   "author": "",
