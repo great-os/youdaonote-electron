@@ -1,3 +1,7 @@
+# BLACK LIVE MATTERS
+
+Support BLM EVENT, move to main branch, dump master.
+
 # 有道云笔记Electron版说明
 
 本版本为饭制版，因为目前有道云笔记的macOS版本相当不稳定，同步等等一堆问题，所以制作这个版本，度过这一段难熬的bug修复期
