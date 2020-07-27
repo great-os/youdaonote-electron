@@ -1,7 +1,11 @@
-const { app, BrowserWindow, shell } = require('electron');
+const {
+  app, BrowserWindow, shell, Menu,
+// eslint-disable-next-line import/no-extraneous-dependencies
+} = require('electron');
 
 function createWindow() {
   // Create the browser window.
+  Menu.setApplicationMenu(null);
   const win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -11,7 +15,7 @@ function createWindow() {
   });
 
   win.once('ready-to-show', () => {
-    win.setMenu(null);
+    win.setMenuBarVisibility(false);
     win.show();
   });
 
