@@ -8,10 +8,15 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "package-win": "electron-builder build --win --x64",
-    "package-all": "electron-builder build -mwl"
+    "package-all": "electron-builder build -mwl",
+    "package-linux": "electron-builder build --linux deb rpm"
   },
+  "homepage": "https://github.com/greatbody/youdaonote-electron",
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "greatbody",
+    "email": "sunruicode@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^6.0.2",
@@ -22,6 +27,12 @@
     "productName": "YoudaoNote",
     "mac": {
       "category": "tools"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm"
+      ]
     },
     "fileAssociations": {
       "ext": "png"
