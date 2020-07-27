@@ -4,6 +4,7 @@
   "description": "Electron Version YoudaoNote",
   "main": "main.js",
   "scripts": {
+    "lint": "eslint .",
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
@@ -18,8 +19,10 @@
     "email": "sunruicode@gmail.com"
   },
   "license": "ISC",
+  "dependencies": {
+    "electron": "^6.0.2"
+  },
   "devDependencies": {
-    "electron": "^6.0.2",
     "electron-builder": "^21.2.0",
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
