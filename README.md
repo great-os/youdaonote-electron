@@ -17,3 +17,7 @@
 ```sh
 npm run dist
 ```
+
+# 更新
+
+新增了 Windows 64位 支持, [下载Windows 64位版本](https://github.com/greatbody/youdaonote-electron/releases/download/v1.0.2/YoudaoNote.1.0.2.x64.exe)
