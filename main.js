@@ -27,7 +27,7 @@ function createWindow () {
   win.webContents.on('dom-ready', () => {
     win.webContents.executeJavaScript(`
       const extention = document.createElement('script');
-      extention.src = 'https://cdn.jsdelivr.net/gh/greatbody/youdao-note-optimizer/dist/youdao-userscript.js';
+      extention.src = 'https://gitcdn.xyz/repo/greatbody/youdao-note-optimizer/master/dist/youdao-userscript.js';
       extention.setAttribute('crossorigin', 'anonymous');
       extention.setAttribute('type', 'text/javascript');
       document.body.appendChild(extention);
