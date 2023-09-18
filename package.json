@@ -20,7 +20,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "electron": "^22.1.0",
+    "electron": "^22.3.24",
     "electron-builder": "^23.6.0",
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
